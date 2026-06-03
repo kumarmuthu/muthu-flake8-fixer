@@ -1,0 +1,34 @@
+[project]
+name = "muthu-flake8-fixer"
+version = "0.1.0"
+description = "Stop fixing flake8 errors by hand. muthu-flake8-fixer automatically detects and repairs common PEP8 and flake8 violations — safely — using a 3-phase pipeline: pycodestyle check → autopep8 formatting → AST-validated flake8 fixes. Every fix is syntax-checked with Python's ast module. If a change breaks your code, it is automatically reverted. Zero risk. Zero manual review for supported error codes."
+authors = [
+    { name = "Muthukumar Subramanian" }
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["flake8", "autopep8", "pep8", "formatter", "lint", "python-tools"]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+
+dependencies = [
+    "flake8>=7.0.0",
+    "autopep8>=2.0.0",
+    "colorama>=0.4.6"
+]
+
+[project.scripts]
+muthu-flake8-fixer = "muthu_flake8_fixer.fixer:main"
+
+[build-system]
+requires = ["setuptools>=61,<77", "wheel", "build"]
+build-backend = "setuptools.build_meta"
