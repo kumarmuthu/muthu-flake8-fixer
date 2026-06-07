@@ -7,15 +7,16 @@ modification, public display, or public performance of this software,
 via any medium, is strictly prohibited without the express prior written
 permission of the author.
 
-Permission is hereby granted to use this software solely for internal,
-non-commercial purposes, subject to the following conditions:
+Permission is hereby granted to use this software solely for personal,
+educational, internal business, and production purposes, subject to
+the following conditions:
 
   1. The above copyright notice and this permission notice shall be
      included in all copies or substantial portions of the software.
 
-  2. Redistributions in any form — source or binary — with or without
-     modification, are not permitted without explicit written consent
-     from the author.
+  2. Installation via pip or PyPI is permitted. Redistribution in any
+     other form — source or binary — with or without modification,
+     is not permitted without explicit written consent from the author.
 
   3. The software may not be sublicensed, sold, rented, or transferred
      to any third party without prior written permission.
